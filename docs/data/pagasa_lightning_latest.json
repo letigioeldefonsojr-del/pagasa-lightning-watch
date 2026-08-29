@@ -3863,7 +3863,7 @@
       "type": "Cloud to Ground",
       "amplitude_ka": "28327",
       "height_m": "0",
-      "num_sensors": "8"
+      "num_sensors": "19"
     },
     {
       "timestamp": "2026-08-29T23:57:29.183970407Z",
@@ -4181,9 +4181,9 @@
       "num_sensors": "10"
     },
     {
-      "timestamp": "2026-08-29T23:21:34.655614877Z",
-      "latitude": "5.687153",
-      "longitude": "110.31896",
+      "timestamp": "2026-08-29T23:52:33.224941690Z",
+      "latitude": "20.88242",
+      "longitude": "114.101337",
       "type": "Cloud to Ground",
       "amplitude_ka": "-17411",
       "height_m": "0",
