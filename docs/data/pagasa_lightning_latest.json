@@ -560,7 +560,7 @@
       "type": "Cloud to Ground",
       "amplitude_ka": "21847",
       "height_m": "0",
-      "num_sensors": "8"
+      "num_sensors": "19"
     },
     {
       "timestamp": "2026-08-29T23:52:04.909798325Z",
