@@ -124,6 +124,21 @@ h1 {
   font-size: 0.8rem;
 }
 
+#download-list .featured {
+  background: rgba(79, 179, 255, 0.08);
+  font-weight: 600;
+}
+
+#download-list .group-label {
+  background: var(--panel);
+  color: var(--text-dim);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-weight: 600;
+  padding: 0.4rem 0.9rem;
+}
+
 .table-wrap {
   overflow-x: auto;
   border: 1px solid var(--panel-border);

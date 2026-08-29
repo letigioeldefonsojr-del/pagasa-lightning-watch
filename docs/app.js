@@ -130,19 +130,33 @@ async function renderDownloads() {
     });
     if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
     const entries = await resp.json();
-    const files = entries
-      .filter((e) => e.type === "file" && (e.name.endsWith(".csv") || e.name.endsWith(".json")))
-      .sort((a, b) => b.name.localeCompare(a.name)); // newest-looking filenames first
+    const files = entries.filter((e) => e.type === "file" && (e.name.endsWith(".csv") || e.name.endsWith(".json")));
     if (!files.length) {
       list.innerHTML = '<li class="empty">No data files yet -- check back after the first scheduled run finishes.</li>';
       return;
     }
-    list.innerHTML = files
-      .map(
-        (f) =>
-          `<li><a href="${f.download_url}" download="${escapeHtml(f.name)}">${escapeHtml(f.name)}</a> <span class="filesize">(${(f.size / 1024).toFixed(1)} KB)</span></li>`
-      )
-      .join("");
+
+    const sizeLabel = (f) => `(${(f.size / 1024).toFixed(1)} KB)`;
+    const link = (f, label) =>
+      `<a href="${f.download_url}" download="${escapeHtml(f.name)}">${escapeHtml(label ?? f.name)}</a>`;
+
+    // ALL_CSV_FILE (see build_dashboard_feed.py) holds every strike counted
+    // in the "total strikes logged" stat at the top of the page -- surface
+    // it first and labeled as such, since that's the one download most
+    // people actually want, rather than making them find it among however
+    // many hourly segment files exist.
+    const combined = files.find((f) => f.name === "lightning_strikes_all.csv");
+    const rest = files.filter((f) => f !== combined).sort((a, b) => b.name.localeCompare(a.name)); // newest-looking filenames first
+
+    let html = "";
+    if (combined) {
+      html += `<li class="featured">${link(combined, "All strikes -- matches “total strikes logged” above")} <span class="filesize">${sizeLabel(combined)}</span></li>`;
+    }
+    if (rest.length) {
+      html += `<li class="group-label">Individual watch segments</li>`;
+      html += rest.map((f) => `<li>${link(f)} <span class="filesize">${sizeLabel(f)}</span></li>`).join("");
+    }
+    list.innerHTML = html;
   } catch (err) {
     list.innerHTML = `<li class="empty">Couldn't load the file list (${escapeHtml(err.message)}). You can still browse it directly on <a href="https://github.com/${owner}/${repo}/tree/main/docs/data" target="_blank" rel="noopener">GitHub</a>.</li>`;
   }

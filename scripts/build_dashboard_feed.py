@@ -21,6 +21,10 @@ from pathlib import Path
 
 DATA_DIR = Path(__file__).resolve().parent.parent / "docs" / "data"
 JSON_PATH = DATA_DIR / "pagasa_lightning_latest.json"
+# Deliberately NOT named pagasa_lightning_*.csv / panahon_lightning_*.csv --
+# it must not match CSV_GLOBS below, or the next run would read this
+# merged output back in as if it were just another segment file.
+ALL_CSV_PATH = DATA_DIR / "lightning_strikes_all.csv"
 MAX_JSON_ROWS = 500
 
 # Matches filenames from both watch_lightning() (pagasa) and
@@ -66,6 +70,22 @@ def main():
         "strikes": all_rows[-MAX_JSON_ROWS:],
     }
     JSON_PATH.write_text(json.dumps(payload, indent=2), encoding="utf-8")
+
+    # A single combined CSV holding every strike counted in
+    # "total_strikes" above -- pagasa and panahon rows have different
+    # columns (amplitude/url vs amplitude_ka/height_m/num_sensors), so the
+    # header is the union of whatever columns actually showed up, with the
+    # common ones first; a row missing a given source's columns just gets
+    # blanks there.
+    priority = ["timestamp", "latitude", "longitude", "type"]
+    other_fields = sorted({k for row in all_rows for k in row.keys()} - set(priority))
+    fieldnames = priority + other_fields
+    with ALL_CSV_PATH.open("w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=fieldnames, extrasaction="ignore", restval="")
+        writer.writeheader()
+        for row in all_rows:
+            writer.writerow(row)
+
     print(f"  dashboard feed: {len(all_rows)} total strike(s) across {len(csv_paths)} file(s)")
 
 
