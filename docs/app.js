@@ -50,6 +50,12 @@ function escapeHtml(value) {
     .replace(/>/g, "&gt;");
 }
 
+// Module-level so repeated renderMap() calls (auto-refresh) reuse the same
+// Leaflet map instead of re-initializing it on top of itself, which
+// throws "Map container is already initialized" after the first refresh.
+let mapInstance = null;
+let markersLayer = null;
+
 function renderMap(strikes) {
   const mapEl = document.getElementById("map");
   if (typeof L === "undefined") {
@@ -64,31 +70,41 @@ function renderMap(strikes) {
     mapEl.style.color = "var(--text-dim)";
     return;
   }
-  const map = L.map(mapEl).setView([12.8797, 121.774], 6); // roughly centered on the Philippines
 
-  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-    maxZoom: 12,
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-  }).addTo(map);
+  if (!mapInstance) {
+    mapInstance = L.map(mapEl).setView([12.8797, 121.774], 6); // roughly centered on the Philippines
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      maxZoom: 12,
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    }).addTo(mapInstance);
+    markersLayer = L.layerGroup().addTo(mapInstance);
+  } else {
+    markersLayer.clearLayers(); // drop the previous refresh's markers before redrawing
+  }
 
   const points = [];
   strikes.forEach((s) => {
     const lat = parseFloat(s.latitude);
     const lon = parseFloat(s.longitude);
     if (Number.isNaN(lat) || Number.isNaN(lon)) return;
-    const marker = L.circleMarker([lat, lon], {
+    L.circleMarker([lat, lon], {
       radius: 5,
       color: typeClass(s.type) === "type-cg" ? "#ffb454" : "#4fb3ff",
       fillOpacity: 0.7,
-    }).bindPopup(
-      `<strong>${escapeHtml(s.type ?? "strike")}</strong><br>${escapeHtml(s.timestamp ?? "")}<br>${lat.toFixed(3)}, ${lon.toFixed(3)}`
-    );
-    marker.addTo(map);
+    })
+      .bindPopup(
+        `<strong>${escapeHtml(s.type ?? "strike")}</strong><br>${escapeHtml(s.timestamp ?? "")}<br>${lat.toFixed(3)}, ${lon.toFixed(3)}`
+      )
+      .addTo(markersLayer);
     points.push([lat, lon]);
   });
 
-  if (points.length) {
-    map.fitBounds(points, { maxZoom: 9, padding: [20, 20] });
+  // Only auto-fit the view on the very first render -- on later
+  // auto-refreshes, snapping/zooming the map out from under someone who's
+  // panned around to look at a specific area would be annoying.
+  if (points.length && !mapInstance._autoFitted) {
+    mapInstance.fitBounds(points, { maxZoom: 9, padding: [20, 20] });
+    mapInstance._autoFitted = true;
   }
 }
 
@@ -118,3 +134,4 @@ async function load() {
 }
 
 load();
+setInterval(load, 60000); // auto-refresh every 60s so you never have to reload manually
