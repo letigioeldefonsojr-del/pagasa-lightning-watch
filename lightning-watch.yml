@@ -1,0 +1,59 @@
+name: Lightning watch
+
+on:
+  schedule:
+    # Fires at fixed UTC clock hours 0, 5, 10, 15, 20 (every 5 hours).
+    # Each job self-stops after ~5h50m (see MAX_RUNTIME_SECONDS below),
+    # so the NEXT scheduled job starts about 50 minutes before the
+    # previous one stops -- deliberate overlap, not a gap, to absorb
+    # GitHub's schedule being best-effort (runs can slip a few minutes).
+    - cron: '0 */5 * * *'
+  workflow_dispatch: {}   # lets you trigger a run manually from the Actions tab, for testing
+
+permissions:
+  contents: write   # needed so this workflow can commit the updated data back to the repo
+
+# Deliberately NOT using a concurrency group here -- unlike a "poll once"
+# job, this one runs for hours, and we WANT the next scheduled run to
+# start and briefly overlap with the previous one still finishing up
+# (see the cron comment above), not get queued behind it.
+
+env:
+  # "panahon" (richer per-strike data, live push feed) or "pagasa" (no
+  # extra dependency, simple REST polling). See DEPLOY_GITHUB.md.
+  LIGHTNING_SOURCE: panahon
+  # 5h50m -- safely under GitHub's 6h hard job kill, leaving time for a
+  # clean final commit instead of being cut off mid-write.
+  MAX_RUNTIME_SECONDS: '21000'
+  COMMIT_INTERVAL_SECONDS: '300'
+  # Rotate into a new CSV every N minutes instead of one file per job run.
+  # Set to '0' to go back to a single continuous file per job run.
+  SPLIT_MINUTES: '60'
+  # panahon.gov.ph's certificate fails strict verification on GitHub's
+  # runners specifically (works fine on a normal PC) -- a mismatch
+  # between their cert chain and this environment's trust store, not an
+  # actual security issue with this script. Set to 'true' instead if
+  # you'd rather it fail loudly than skip verification for this feed.
+  PANAHON_SSL_VERIFY: 'false'
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 355   # belt-and-suspenders safety net under GitHub's own 360-min (6h) hard cap
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install requests numpy Pillow rasterio "python-socketio[client]" websocket-client
+
+      - name: Watch continuously, committing (and syncing to Drive) periodically
+        env:
+          GDRIVE_CLIENT_ID: ${{ secrets.GDRIVE_CLIENT_ID }}
+          GDRIVE_CLIENT_SECRET: ${{ secrets.GDRIVE_CLIENT_SECRET }}
+          GDRIVE_REFRESH_TOKEN: ${{ secrets.GDRIVE_REFRESH_TOKEN }}
+        run: python scripts/watch_and_commit.py
