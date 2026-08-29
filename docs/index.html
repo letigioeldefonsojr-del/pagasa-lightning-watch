@@ -10,7 +10,7 @@
 <body>
   <header>
     <h1>PAGASA Lightning Watch</h1>
-    <p class="sub">Auto-updated every ~15 minutes by a GitHub Actions workflow -- runs whether or not anyone's computer is on.</p>
+    <p class="sub">Continuously watched by a GitHub Actions workflow -- runs whether or not anyone's computer is on.</p>
   </header>
 
   <section class="stats" id="stats">
@@ -19,12 +19,16 @@
       <div class="stat-label">total strikes logged</div>
     </div>
     <div class="stat-card">
-      <div class="stat-value" id="stat-new">--</div>
-      <div class="stat-label">new on last run</div>
+      <div class="stat-value" id="stat-latest">--</div>
+      <div class="stat-label">most recent strike</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value" id="stat-segments">--</div>
+      <div class="stat-label">watch segments (job runs)</div>
     </div>
     <div class="stat-card">
       <div class="stat-value" id="stat-updated">--</div>
-      <div class="stat-label">last updated (UTC)</div>
+      <div class="stat-label">feed last updated (UTC)</div>
     </div>
   </section>
 
@@ -51,7 +55,7 @@
   </section>
 
   <footer>
-    <p>Data source: PAGASA (<a href="https://pagasa.dost.gov.ph/" target="_blank" rel="noopener">pagasa.dost.gov.ph</a>). Raw data: <a href="data/pagasa_lightning_log.csv">full CSV</a> &middot; <a href="data/pagasa_lightning_latest.json">latest JSON</a>.</p>
+    <p>Data source: PAGASA. Raw data: browse the <a href="data/">docs/data folder</a> for every segment CSV, or the merged <a href="data/pagasa_lightning_latest.json">latest JSON</a> feed this page reads.</p>
   </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>

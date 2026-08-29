@@ -2,22 +2,36 @@ name: Lightning watch
 
 on:
   schedule:
-    # Shortest interval GitHub allows is every 5 min; 15 min is the
-    # realistic reliable floor (schedule triggers are best-effort and can
-    # slip under load) and comfortably covers PAGASA's own rolling window.
-    - cron: '*/15 * * * *'
+    # Fires at fixed UTC clock hours 0, 5, 10, 15, 20 (every 5 hours).
+    # Each job self-stops after ~5h50m (see MAX_RUNTIME_SECONDS below),
+    # so the NEXT scheduled job starts about 50 minutes before the
+    # previous one stops -- deliberate overlap, not a gap, to absorb
+    # GitHub's schedule being best-effort (runs can slip a few minutes).
+    - cron: '0 */5 * * *'
   workflow_dispatch: {}   # lets you trigger a run manually from the Actions tab, for testing
 
 permissions:
   contents: write   # needed so this workflow can commit the updated data back to the repo
 
-concurrency:
-  group: lightning-watch
-  cancel-in-progress: false   # never cancel a run that's mid-commit; just queue the next one
+# Deliberately NOT using a concurrency group here -- unlike a "poll once"
+# job, this one runs for hours, and we WANT the next scheduled run to
+# start and briefly overlap with the previous one still finishing up
+# (see the cron comment above), not get queued behind it.
+
+env:
+  # "panahon" (richer per-strike data, live push feed) or "pagasa" (no
+  # extra dependency, simple REST polling). See DEPLOY_GITHUB.md.
+  LIGHTNING_SOURCE: panahon
+  # 5h50m -- safely under GitHub's 6h hard job kill, leaving time for a
+  # clean final commit instead of being cut off mid-write.
+  MAX_RUNTIME_SECONDS: '21000'
+  COMMIT_INTERVAL_SECONDS: '300'
 
 jobs:
-  poll:
+  watch:
     runs-on: ubuntu-latest
+    timeout-minutes: 355   # belt-and-suspenders safety net under GitHub's own 360-min (6h) hard cap
+
     steps:
       - uses: actions/checkout@v4
 
@@ -26,23 +40,11 @@ jobs:
           python-version: '3.12'
 
       - name: Install dependencies
-        run: pip install requests
+        run: pip install requests "python-socketio[client]" websocket-client
 
-      - name: Fetch latest strikes
-        run: python scripts/poll_and_commit.py
-
-      - name: Commit updated data
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/data/
-          git diff --cached --quiet || git commit -m "Update lightning data $(date -u +'%Y-%m-%d %H:%M UTC')"
-          git push
-
-      - name: Sync to Google Drive
-        if: ${{ secrets.GDRIVE_REFRESH_TOKEN != '' }}
+      - name: Watch continuously, committing (and syncing to Drive) periodically
         env:
           GDRIVE_CLIENT_ID: ${{ secrets.GDRIVE_CLIENT_ID }}
           GDRIVE_CLIENT_SECRET: ${{ secrets.GDRIVE_CLIENT_SECRET }}
           GDRIVE_REFRESH_TOKEN: ${{ secrets.GDRIVE_REFRESH_TOKEN }}
-        run: python scripts/upload_to_drive.py
+        run: python scripts/watch_and_commit.py

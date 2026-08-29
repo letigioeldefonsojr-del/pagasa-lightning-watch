@@ -33,7 +33,12 @@ DRIVE_FILES_URL = "https://www.googleapis.com/drive/v3/files"
 DRIVE_UPLOAD_URL = "https://www.googleapis.com/upload/drive/v3/files"
 DRIVE_FOLDER_NAME = "PAGASA_Lightning"
 DATA_DIR = Path(__file__).resolve().parent.parent / "docs" / "data"
-FILES_TO_SYNC = ["pagasa_lightning_log.csv", "pagasa_lightning_latest.json"]
+# There's no single canonical CSV anymore -- each job run writes its own
+# uniquely-timestamped segment file (see scripts/build_dashboard_feed.py,
+# which uses this same glob to merge them for the dashboard). Sync every
+# segment that exists locally, plus the merged JSON feed.
+CSV_GLOBS = ["pagasa_lightning_*.csv", "panahon_lightning_*.csv"]
+JSON_FILE = "pagasa_lightning_latest.json"
 
 
 def get_access_token() -> str:
@@ -137,11 +142,13 @@ def main():
     print(f"Syncing to Drive folder '{DRIVE_FOLDER_NAME}' ({folder_id}):")
 
     mime_by_ext = {".csv": "text/csv", ".json": "application/json"}
-    for name in FILES_TO_SYNC:
-        path = DATA_DIR / name
-        if not path.exists():
-            print(f"  skipping {name} -- not found yet")
-            continue
+    csv_paths = sorted(set(p for pattern in CSV_GLOBS for p in DATA_DIR.glob(pattern)))
+    json_path = DATA_DIR / JSON_FILE
+    paths = csv_paths + ([json_path] if json_path.exists() else [])
+    if not paths:
+        print("  nothing to sync yet")
+        return
+    for path in paths:
         upload_or_update(token, path, folder_id, mime_by_ext.get(path.suffix, "application/octet-stream"))
 
 

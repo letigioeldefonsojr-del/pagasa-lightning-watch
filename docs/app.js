@@ -14,7 +14,8 @@ function typeClass(type) {
 
 function renderStats(payload) {
   setText("stat-total", payload.total_strikes ?? "--");
-  setText("stat-new", payload.new_this_run ?? "--");
+  setText("stat-latest", payload.latest_strike_timestamp || "none yet");
+  setText("stat-segments", payload.segment_count ?? "--");
   setText("stat-updated", payload.generated_at || "--");
 }
 
