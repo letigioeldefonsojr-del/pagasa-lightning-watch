@@ -2,7 +2,7 @@
   "generated_at": "2026-08-29 22:46:21 UTC",
   "total_strikes": 35251,
   "segment_count": 8,
-  "latest_strike_timestamp": "2026-08-29T22:28:46.248594872Z",
+  "latest_strike_timestamp": "2026-08-29T22:42:36.756926477Z",
   "strikes": [
     {
       "timestamp": "2026-08-29T22:42:51.890619277Z",
@@ -1586,6 +1586,15 @@
       "type": "Cloud to Ground",
       "amplitude_ka": "14263",
       "height_m": "0",
+      "num_sensors": "9"
+    },
+    {
+      "timestamp": "2026-08-29T22:38:31.186219255Z",
+      "latitude": "17.320003",
+      "longitude": "127.604301",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "6676",
+      "height_m": "6075",
       "num_sensors": "10"
     },
     {
@@ -4289,220 +4298,1903 @@
       "num_sensors": "9"
     },
     {
-      "timestamp": "2026-08-29T22:27:22.821698897Z",
-      "latitude": "19.564938",
-      "longitude": "118.422261",
-      "type": "Cloud to Cloud",
-      "amplitude_ka": "-9200",
-      "height_m": "3025",
-      "num_sensors": "7"
+      "timestamp": "2026-08-29T22:41:02.356862052Z",
+      "latitude": "17.312712",
+      "longitude": "127.416683",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "-80707",
+      "height_m": "0",
+      "num_sensors": "13"
     },
     {
-      "timestamp": "2026-08-29T22:27:23.215741159Z",
-      "latitude": "19.504862",
-      "longitude": "118.41763",
+      "timestamp": "2026-08-29T22:41:02.755197362Z",
+      "latitude": "17.391178",
+      "longitude": "127.621222",
       "type": "Cloud to Cloud",
-      "amplitude_ka": "-8456",
-      "height_m": "4638",
-      "num_sensors": "9"
-    },
-    {
-      "timestamp": "2026-08-29T22:27:22.798783633Z",
-      "latitude": "19.50944",
-      "longitude": "118.469428",
-      "type": "Cloud to Cloud",
-      "amplitude_ka": "4709",
-      "height_m": "18895",
-      "num_sensors": "7"
-    },
-    {
-      "timestamp": "2026-08-29T22:27:22.834747922Z",
-      "latitude": "19.521361",
-      "longitude": "118.536072",
-      "type": "Cloud to Cloud",
-      "amplitude_ka": "6745",
-      "height_m": "19762",
+      "amplitude_ka": "4408",
+      "height_m": "5689",
       "num_sensors": "8"
     },
     {
-      "timestamp": "2026-08-29T22:27:22.861236318Z",
-      "latitude": "19.539778",
-      "longitude": "118.522738",
+      "timestamp": "2026-08-29T22:41:02.756655907Z",
+      "latitude": "17.385787",
+      "longitude": "127.618571",
       "type": "Cloud to Cloud",
-      "amplitude_ka": "7043",
-      "height_m": "6159",
+      "amplitude_ka": "11700",
+      "height_m": "3057",
+      "num_sensors": "10"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:02.877857175Z",
+      "latitude": "17.486222",
+      "longitude": "127.774015",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "8019",
+      "height_m": "15235",
       "num_sensors": "8"
     },
     {
-      "timestamp": "2026-08-29T22:27:22.856808032Z",
-      "latitude": "19.508284",
-      "longitude": "118.459313",
+      "timestamp": "2026-08-29T22:41:02.312527747Z",
+      "latitude": "17.339575",
+      "longitude": "127.733278",
       "type": "Cloud to Cloud",
-      "amplitude_ka": "7369",
-      "height_m": "6118",
+      "amplitude_ka": "-13634",
+      "height_m": "12061",
       "num_sensors": "7"
     },
     {
-      "timestamp": "2026-08-29T22:27:23.372705682Z",
-      "latitude": "19.534902",
-      "longitude": "118.522682",
+      "timestamp": "2026-08-29T22:41:02.466222683Z",
+      "latitude": "17.359998",
+      "longitude": "127.714651",
       "type": "Cloud to Cloud",
-      "amplitude_ka": "8570",
-      "height_m": "9602",
+      "amplitude_ka": "8484",
+      "height_m": "18911",
+      "num_sensors": "5"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:04.813936000Z",
+      "latitude": "10.664",
+      "longitude": "120.9527",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "-36302",
+      "height_m": "0",
+      "num_sensors": "7"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:04.096497000Z",
+      "latitude": "10.6977",
+      "longitude": "120.9796",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "-47824",
+      "height_m": "0",
+      "num_sensors": "5"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:04.099454372Z",
+      "latitude": "10.691221",
+      "longitude": "121.032033",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "-45653",
+      "height_m": "0",
+      "num_sensors": "14"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:04.681532409Z",
+      "latitude": "10.661573",
+      "longitude": "121.045469",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "-17835",
+      "height_m": "0",
+      "num_sensors": "8"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:04.954801980Z",
+      "latitude": "10.661251",
+      "longitude": "121.04665",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "-13423",
+      "height_m": "0",
       "num_sensors": "6"
     },
     {
-      "timestamp": "2026-08-29T22:27:24.565026521Z",
-      "latitude": "17.503153",
-      "longitude": "126.229972",
+      "timestamp": "2026-08-29T22:41:06.239418625Z",
+      "latitude": "19.082205",
+      "longitude": "113.991595",
       "type": "Cloud to Ground",
-      "amplitude_ka": "23844",
+      "amplitude_ka": "14446",
       "height_m": "0",
-      "num_sensors": "12"
+      "num_sensors": "10"
     },
     {
-      "timestamp": "2026-08-29T22:27:25.342759165Z",
-      "latitude": "17.46245",
-      "longitude": "126.279511",
+      "timestamp": "2026-08-29T22:41:06.421217250Z",
+      "latitude": "18.978337",
+      "longitude": "114.060924",
       "type": "Cloud to Cloud",
-      "amplitude_ka": "-11412",
-      "height_m": "5748",
+      "amplitude_ka": "-6239",
+      "height_m": "7390",
       "num_sensors": "7"
     },
     {
-      "timestamp": "2026-08-29T22:27:25.342099340Z",
-      "latitude": "17.574326",
-      "longitude": "126.304078",
-      "type": "Cloud to Ground",
-      "amplitude_ka": "-126442",
-      "height_m": "0",
-      "num_sensors": "21"
+      "timestamp": "2026-08-29T22:41:06.242575772Z",
+      "latitude": "19.001951",
+      "longitude": "114.059788",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "10270",
+      "height_m": "3025",
+      "num_sensors": "10"
     },
     {
-      "timestamp": "2026-08-29T22:27:25.466588391Z",
-      "latitude": "17.673406",
-      "longitude": "126.243096",
-      "type": "Cloud to Ground",
-      "amplitude_ka": "-22336",
-      "height_m": "0",
-      "num_sensors": "12"
+      "timestamp": "2026-08-29T22:41:06.238161855Z",
+      "latitude": "18.995012",
+      "longitude": "114.063768",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "11492",
+      "height_m": "16135",
+      "num_sensors": "10"
     },
     {
-      "timestamp": "2026-08-29T22:27:25.383109506Z",
-      "latitude": "17.598704",
-      "longitude": "126.360978",
+      "timestamp": "2026-08-29T22:41:08.572287135Z",
+      "latitude": "17.37047",
+      "longitude": "128.214448",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "7963",
+      "height_m": "16448",
+      "num_sensors": "8"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:08.608444424Z",
+      "latitude": "17.37706",
+      "longitude": "128.359678",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "11319",
+      "height_m": "3089",
+      "num_sensors": "6"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:08.235563596Z",
+      "latitude": "21.34428",
+      "longitude": "112.792499",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "-9718",
+      "height_m": "4431",
+      "num_sensors": "14"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:07.981282052Z",
+      "latitude": "21.340409",
+      "longitude": "112.799609",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "9646",
+      "height_m": "6025",
+      "num_sensors": "7"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:09.806844404Z",
+      "latitude": "19.110433",
+      "longitude": "114.749181",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "-8292",
+      "height_m": "3187",
+      "num_sensors": "10"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:09.801673319Z",
+      "latitude": "19.179848",
+      "longitude": "114.777933",
       "type": "Cloud to Ground",
-      "amplitude_ka": "-12227",
+      "amplitude_ka": "15007",
+      "height_m": "0",
+      "num_sensors": "9"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:09.144972185Z",
+      "latitude": "21.107843",
+      "longitude": "111.860698",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "11593",
+      "height_m": "0",
+      "num_sensors": "7"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:09.839701248Z",
+      "latitude": "21.427621",
+      "longitude": "114.844506",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "36058",
       "height_m": "0",
       "num_sensors": "11"
     },
     {
-      "timestamp": "2026-08-29T22:27:24.811147561Z",
-      "latitude": "17.496953",
-      "longitude": "126.40718",
+      "timestamp": "2026-08-29T22:41:10.629160165Z",
+      "latitude": "17.356835",
+      "longitude": "128.33395",
       "type": "Cloud to Cloud",
-      "amplitude_ka": "-9527",
-      "height_m": "4709",
-      "num_sensors": "9"
-    },
-    {
-      "timestamp": "2026-08-29T22:27:25.023028188Z",
-      "latitude": "17.567579",
-      "longitude": "126.458234",
-      "type": "Cloud to Cloud",
-      "amplitude_ka": "-3683",
-      "height_m": "16283",
-      "num_sensors": "6"
-    },
-    {
-      "timestamp": "2026-08-29T22:27:24.563663313Z",
-      "latitude": "17.508447",
-      "longitude": "126.395247",
-      "type": "Cloud to Cloud",
-      "amplitude_ka": "3880",
-      "height_m": "5557",
-      "num_sensors": "6"
-    },
-    {
-      "timestamp": "2026-08-29T22:27:24.893078498Z",
-      "latitude": "17.611577",
-      "longitude": "126.413376",
-      "type": "Cloud to Cloud",
-      "amplitude_ka": "4296",
-      "height_m": "11644",
-      "num_sensors": "6"
-    },
-    {
-      "timestamp": "2026-08-29T22:27:24.948947648Z",
-      "latitude": "17.551106",
-      "longitude": "126.408205",
-      "type": "Cloud to Cloud",
-      "amplitude_ka": "6637",
-      "height_m": "18726",
-      "num_sensors": "5"
-    },
-    {
-      "timestamp": "2026-08-29T22:27:24.890494167Z",
-      "latitude": "17.597351",
-      "longitude": "126.260976",
-      "type": "Cloud to Cloud",
-      "amplitude_ka": "10747",
-      "height_m": "3158",
-      "num_sensors": "9"
-    },
-    {
-      "timestamp": "2026-08-29T22:27:24.871800536Z",
-      "latitude": "17.519922",
-      "longitude": "126.416042",
-      "type": "Cloud to Cloud",
-      "amplitude_ka": "11240",
-      "height_m": "19355",
-      "num_sensors": "10"
-    },
-    {
-      "timestamp": "2026-08-29T22:27:26.087760922Z",
-      "latitude": "21.316236",
-      "longitude": "112.792688",
-      "type": "Cloud to Cloud",
-      "amplitude_ka": "-14801",
-      "height_m": "3017",
-      "num_sensors": "10"
-    },
-    {
-      "timestamp": "2026-08-29T22:27:27.680853954Z",
-      "latitude": "13.491023",
-      "longitude": "120.507334",
-      "type": "Cloud to Cloud",
-      "amplitude_ka": "5838",
-      "height_m": "15149",
-      "num_sensors": "8"
-    },
-    {
-      "timestamp": "2026-08-29T22:28:46.177021975Z",
-      "latitude": "12.201127",
-      "longitude": "122.210158",
-      "type": "Cloud to Cloud",
-      "amplitude_ka": "16829",
-      "height_m": "4493",
-      "num_sensors": "8"
-    },
-    {
-      "timestamp": "2026-08-29T22:28:46.259481147Z",
-      "latitude": "15.209603",
-      "longitude": "120.016477",
-      "type": "Cloud to Cloud",
-      "amplitude_ka": "-7251",
-      "height_m": "6228",
+      "amplitude_ka": "7077",
+      "height_m": "3051",
       "num_sensors": "7"
     },
     {
-      "timestamp": "2026-08-29T22:28:46.248594872Z",
-      "latitude": "15.221589",
-      "longitude": "119.998763",
+      "timestamp": "2026-08-29T22:41:11.378072000Z",
+      "latitude": "20.3953",
+      "longitude": "110.1421",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "-67140",
+      "height_m": "0",
+      "num_sensors": "5"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:11.525691791Z",
+      "latitude": "20.371161",
+      "longitude": "110.118326",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "-35280",
+      "height_m": "0",
+      "num_sensors": "11"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:11.435032912Z",
+      "latitude": "20.366322",
+      "longitude": "110.052231",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "-17225",
+      "height_m": "0",
+      "num_sensors": "6"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:11.400652635Z",
+      "latitude": "20.366732",
+      "longitude": "110.119859",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "-13317",
+      "height_m": "0",
+      "num_sensors": "8"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:11.137202629Z",
+      "latitude": "19.952909",
+      "longitude": "114.222016",
       "type": "Cloud to Cloud",
-      "amplitude_ka": "11224",
-      "height_m": "3000",
+      "amplitude_ka": "-16290",
+      "height_m": "17900",
+      "num_sensors": "10"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:14.728614208Z",
+      "latitude": "17.479328",
+      "longitude": "128.52855",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "5514",
+      "height_m": "13493",
+      "num_sensors": "5"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:14.338213902Z",
+      "latitude": "17.477519",
+      "longitude": "128.375427",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "-12451",
+      "height_m": "7889",
+      "num_sensors": "8"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:14.499431877Z",
+      "latitude": "17.547683",
+      "longitude": "128.375834",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "-12172",
+      "height_m": "9788",
+      "num_sensors": "10"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:14.347510259Z",
+      "latitude": "17.489346",
+      "longitude": "128.427835",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "4203",
+      "height_m": "6401",
+      "num_sensors": "7"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:14.336885610Z",
+      "latitude": "17.480102",
+      "longitude": "128.425559",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "9155",
+      "height_m": "16662",
+      "num_sensors": "6"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:14.338688000Z",
+      "latitude": "17.5338",
+      "longitude": "128.2472",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "14993",
+      "height_m": "0",
+      "num_sensors": "6"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:15.901481770Z",
+      "latitude": "20.829917",
+      "longitude": "117.099439",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "-7820",
+      "height_m": "3707",
+      "num_sensors": "8"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:15.583140284Z",
+      "latitude": "20.675781",
+      "longitude": "116.985378",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "-6869",
+      "height_m": "18305",
+      "num_sensors": "6"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:15.563786378Z",
+      "latitude": "20.704851",
+      "longitude": "116.960347",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "8907",
+      "height_m": "8357",
+      "num_sensors": "5"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:15.497576397Z",
+      "latitude": "20.746563",
+      "longitude": "117.088196",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "9192",
+      "height_m": "19893",
+      "num_sensors": "5"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:16.231749707Z",
+      "latitude": "20.694793",
+      "longitude": "116.967914",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "9550",
+      "height_m": "0",
+      "num_sensors": "8"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:15.459700712Z",
+      "latitude": "20.720263",
+      "longitude": "117.024757",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "15557",
+      "height_m": "0",
+      "num_sensors": "6"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:15.118493256Z",
+      "latitude": "20.706155",
+      "longitude": "116.949499",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "18027",
+      "height_m": "0",
       "num_sensors": "9"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:16.265230037Z",
+      "latitude": "20.860478",
+      "longitude": "117.24355",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "-9357",
+      "height_m": "18922",
+      "num_sensors": "7"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:16.211312383Z",
+      "latitude": "20.807624",
+      "longitude": "117.195643",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "8708",
+      "height_m": "18463",
+      "num_sensors": "6"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:16.165634065Z",
+      "latitude": "19.015861",
+      "longitude": "114.604028",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "-25420",
+      "height_m": "15248",
+      "num_sensors": "13"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:16.298352380Z",
+      "latitude": "19.034308",
+      "longitude": "114.604173",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "-7867",
+      "height_m": "3086",
+      "num_sensors": "7"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:15.915074010Z",
+      "latitude": "19.08111",
+      "longitude": "114.616923",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "7783",
+      "height_m": "3703",
+      "num_sensors": "11"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:20.063131553Z",
+      "latitude": "15.786773",
+      "longitude": "131.24043",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "-11655",
+      "height_m": "6700",
+      "num_sensors": "8"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:20.046060444Z",
+      "latitude": "15.781038",
+      "longitude": "131.240177",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "8645",
+      "height_m": "13604",
+      "num_sensors": "14"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:20.025897356Z",
+      "latitude": "17.362272",
+      "longitude": "128.320893",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "7308",
+      "height_m": "0",
+      "num_sensors": "9"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:21.091361238Z",
+      "latitude": "19.070782",
+      "longitude": "113.00431",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "-7652",
+      "height_m": "4811",
+      "num_sensors": "12"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:21.131740386Z",
+      "latitude": "19.232229",
+      "longitude": "113.157204",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "-52022",
+      "height_m": "0",
+      "num_sensors": "18"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:21.084623907Z",
+      "latitude": "19.238961",
+      "longitude": "113.157429",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "-12815",
+      "height_m": "0",
+      "num_sensors": "11"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:21.149191880Z",
+      "latitude": "19.222392",
+      "longitude": "113.162557",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "7609",
+      "height_m": "6462",
+      "num_sensors": "8"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:24.353108125Z",
+      "latitude": "13.509178",
+      "longitude": "120.060712",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "-5707",
+      "height_m": "11188",
+      "num_sensors": "8"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:24.342732015Z",
+      "latitude": "13.511666",
+      "longitude": "120.016668",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "-4186",
+      "height_m": "11079",
+      "num_sensors": "5"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:24.041746620Z",
+      "latitude": "13.534007",
+      "longitude": "120.009993",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "4634",
+      "height_m": "13517",
+      "num_sensors": "5"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:24.138880778Z",
+      "latitude": "13.453905",
+      "longitude": "120.064811",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "7781",
+      "height_m": "13197",
+      "num_sensors": "8"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:24.014551846Z",
+      "latitude": "13.479528",
+      "longitude": "120.057859",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "13891",
+      "height_m": "17666",
+      "num_sensors": "8"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:25.135023044Z",
+      "latitude": "15.363899",
+      "longitude": "120.634162",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "-38943",
+      "height_m": "0",
+      "num_sensors": "11"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:25.235668519Z",
+      "latitude": "15.367069",
+      "longitude": "120.623784",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "8951",
+      "height_m": "17415",
+      "num_sensors": "10"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:26.721526820Z",
+      "latitude": "16.437933",
+      "longitude": "129.634323",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "26100",
+      "height_m": "0",
+      "num_sensors": "10"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:26.723019428Z",
+      "latitude": "16.522192",
+      "longitude": "129.59837",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "12537",
+      "height_m": "0",
+      "num_sensors": "10"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:28.417721163Z",
+      "latitude": "14.467662",
+      "longitude": "134.941872",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "-14105",
+      "height_m": "0",
+      "num_sensors": "14"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:28.405355431Z",
+      "latitude": "14.475407",
+      "longitude": "134.900867",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "-9209",
+      "height_m": "4719",
+      "num_sensors": "8"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:29.714753759Z",
+      "latitude": "17.500324",
+      "longitude": "128.211172",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "-32346",
+      "height_m": "0",
+      "num_sensors": "15"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:29.793803496Z",
+      "latitude": "17.467231",
+      "longitude": "128.258586",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "-19896",
+      "height_m": "0",
+      "num_sensors": "11"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:29.870530545Z",
+      "latitude": "17.462092",
+      "longitude": "128.24733",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "-14837",
+      "height_m": "0",
+      "num_sensors": "12"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:29.916512805Z",
+      "latitude": "17.566752",
+      "longitude": "128.226163",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "-10510",
+      "height_m": "12677",
+      "num_sensors": "8"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:30.491058785Z",
+      "latitude": "17.454951",
+      "longitude": "128.089824",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "-14632",
+      "height_m": "0",
+      "num_sensors": "18"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:30.806212429Z",
+      "latitude": "17.46114",
+      "longitude": "128.257538",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "-8538",
+      "height_m": "0",
+      "num_sensors": "9"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:30.647105000Z",
+      "latitude": "21.0852",
+      "longitude": "113.8017",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "-20931",
+      "height_m": "0",
+      "num_sensors": "5"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:30.651239528Z",
+      "latitude": "21.146067",
+      "longitude": "113.740357",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "8119",
+      "height_m": "5159",
+      "num_sensors": "9"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:30.644643071Z",
+      "latitude": "21.155695",
+      "longitude": "113.75",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "23716",
+      "height_m": "0",
+      "num_sensors": "16"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:31.441144457Z",
+      "latitude": "19.027268",
+      "longitude": "114.980855",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "-30277",
+      "height_m": "0",
+      "num_sensors": "15"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:31.393242371Z",
+      "latitude": "19.025994",
+      "longitude": "114.986084",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "-23131",
+      "height_m": "0",
+      "num_sensors": "10"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:31.705605818Z",
+      "latitude": "19.027612",
+      "longitude": "114.980814",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "-18088",
+      "height_m": "0",
+      "num_sensors": "13"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:31.746797188Z",
+      "latitude": "19.027265",
+      "longitude": "114.980775",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "-16632",
+      "height_m": "0",
+      "num_sensors": "10"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:31.824510548Z",
+      "latitude": "19.025994",
+      "longitude": "114.981186",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "-16065",
+      "height_m": "0",
+      "num_sensors": "9"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:31.794768158Z",
+      "latitude": "19.024084",
+      "longitude": "114.981804",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "-12325",
+      "height_m": "3013",
+      "num_sensors": "10"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:31.880460028Z",
+      "latitude": "19.02735",
+      "longitude": "114.98035",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "-11208",
+      "height_m": "0",
+      "num_sensors": "9"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:31.507862437Z",
+      "latitude": "19.039215",
+      "longitude": "114.972719",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "-10168",
+      "height_m": "5815",
+      "num_sensors": "9"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:32.057008902Z",
+      "latitude": "19.027136",
+      "longitude": "114.979759",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "-9155",
+      "height_m": "0",
+      "num_sensors": "9"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:31.523342835Z",
+      "latitude": "19.016395",
+      "longitude": "114.981051",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "-7654",
+      "height_m": "0",
+      "num_sensors": "7"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:32.113861556Z",
+      "latitude": "17.354411",
+      "longitude": "128.34058",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "5925",
+      "height_m": "5192",
+      "num_sensors": "6"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:32.254065208Z",
+      "latitude": "10.696165",
+      "longitude": "121.49238",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "54448",
+      "height_m": "6671",
+      "num_sensors": "9"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:34.440916295Z",
+      "latitude": "17.387428",
+      "longitude": "128.361757",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "4471",
+      "height_m": "7093",
+      "num_sensors": "6"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:34.378440081Z",
+      "latitude": "17.375626",
+      "longitude": "128.368172",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "7929",
+      "height_m": "5378",
+      "num_sensors": "7"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:38.873708404Z",
+      "latitude": "10.707874",
+      "longitude": "121.169799",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "-16684",
+      "height_m": "0",
+      "num_sensors": "9"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:39.830164492Z",
+      "latitude": "17.339771",
+      "longitude": "127.407954",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "-81091",
+      "height_m": "0",
+      "num_sensors": "17"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:40.251540482Z",
+      "latitude": "17.310515",
+      "longitude": "127.430589",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "-17775",
+      "height_m": "0",
+      "num_sensors": "9"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:40.189215899Z",
+      "latitude": "17.347362",
+      "longitude": "127.36716",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "4708",
+      "height_m": "13294",
+      "num_sensors": "8"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:39.849476585Z",
+      "latitude": "17.324829",
+      "longitude": "127.467484",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "36530",
+      "height_m": "0",
+      "num_sensors": "14"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:39.978118276Z",
+      "latitude": "17.217929",
+      "longitude": "127.524539",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "-15279",
+      "height_m": "0",
+      "num_sensors": "10"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:42.062041025Z",
+      "latitude": "21.191666",
+      "longitude": "115.012837",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "11608",
+      "height_m": "0",
+      "num_sensors": "7"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:42.063567850Z",
+      "latitude": "21.184659",
+      "longitude": "115.015794",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "12207",
+      "height_m": "3239",
+      "num_sensors": "10"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:42.241258409Z",
+      "latitude": "20.935391",
+      "longitude": "111.947047",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "-11603",
+      "height_m": "0",
+      "num_sensors": "10"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:42.238371527Z",
+      "latitude": "20.955874",
+      "longitude": "111.927978",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "21986",
+      "height_m": "0",
+      "num_sensors": "10"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:42.659302934Z",
+      "latitude": "18.945699",
+      "longitude": "114.864",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "-11945",
+      "height_m": "0",
+      "num_sensors": "9"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:42.660748194Z",
+      "latitude": "18.95446",
+      "longitude": "114.754756",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "20976",
+      "height_m": "0",
+      "num_sensors": "10"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:45.927665147Z",
+      "latitude": "17.330329",
+      "longitude": "127.735545",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "5960",
+      "height_m": "17951",
+      "num_sensors": "6"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:45.498715453Z",
+      "latitude": "17.357391",
+      "longitude": "127.73623",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "8795",
+      "height_m": "4915",
+      "num_sensors": "5"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:45.925539109Z",
+      "latitude": "17.358782",
+      "longitude": "127.733948",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "14473",
+      "height_m": "0",
+      "num_sensors": "6"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:45.908534007Z",
+      "latitude": "17.238392",
+      "longitude": "127.776534",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "-10476",
+      "height_m": "5527",
+      "num_sensors": "7"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:45.264281004Z",
+      "latitude": "19.278419",
+      "longitude": "115.415168",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "-10771",
+      "height_m": "16188",
+      "num_sensors": "7"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:45.384546050Z",
+      "latitude": "19.310088",
+      "longitude": "115.468858",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "10722",
+      "height_m": "5068",
+      "num_sensors": "7"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:47.572423559Z",
+      "latitude": "21.381743",
+      "longitude": "114.885996",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "-55201",
+      "height_m": "0",
+      "num_sensors": "13"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:47.838860151Z",
+      "latitude": "21.384588",
+      "longitude": "114.883209",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "-51356",
+      "height_m": "0",
+      "num_sensors": "12"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:47.684418488Z",
+      "latitude": "21.382397",
+      "longitude": "114.877009",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "-19941",
+      "height_m": "0",
+      "num_sensors": "10"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:47.598868296Z",
+      "latitude": "21.368867",
+      "longitude": "114.886906",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "-16422",
+      "height_m": "0",
+      "num_sensors": "12"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:48.001818175Z",
+      "latitude": "21.38618",
+      "longitude": "114.884563",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "-12451",
+      "height_m": "0",
+      "num_sensors": "9"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:47.696802417Z",
+      "latitude": "21.378099",
+      "longitude": "114.874498",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "-8846",
+      "height_m": "0",
+      "num_sensors": "9"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:47.632747816Z",
+      "latitude": "21.37391",
+      "longitude": "114.876755",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "-8826",
+      "height_m": "0",
+      "num_sensors": "9"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:47.616568667Z",
+      "latitude": "21.347102",
+      "longitude": "114.864856",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "11549",
+      "height_m": "14221",
+      "num_sensors": "10"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:49.759923225Z",
+      "latitude": "10.899697",
+      "longitude": "121.52829",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "53660",
+      "height_m": "0",
+      "num_sensors": "16"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:53.621007469Z",
+      "latitude": "15.42498",
+      "longitude": "132.488622",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "12166",
+      "height_m": "0",
+      "num_sensors": "7"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:54.674586521Z",
+      "latitude": "15.442719",
+      "longitude": "132.435816",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "-4763",
+      "height_m": "0",
+      "num_sensors": "6"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:55.053962003Z",
+      "latitude": "15.44854",
+      "longitude": "132.239802",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "-40893",
+      "height_m": "0",
+      "num_sensors": "25"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:54.750352534Z",
+      "latitude": "15.427846",
+      "longitude": "132.31382",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "-5292",
+      "height_m": "0",
+      "num_sensors": "7"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:58.607483781Z",
+      "latitude": "18.922405",
+      "longitude": "114.900451",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "-11194",
+      "height_m": "3124",
+      "num_sensors": "8"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:58.627721033Z",
+      "latitude": "18.903323",
+      "longitude": "114.951211",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "11543",
+      "height_m": "17681",
+      "num_sensors": "6"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:58.160963446Z",
+      "latitude": "18.990962",
+      "longitude": "115.002053",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "-18050",
+      "height_m": "18865",
+      "num_sensors": "12"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:58.596925219Z",
+      "latitude": "18.993455",
+      "longitude": "114.991058",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "-9008",
+      "height_m": "0",
+      "num_sensors": "10"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:58.298984244Z",
+      "latitude": "19.010958",
+      "longitude": "114.210478",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "-18358",
+      "height_m": "3011",
+      "num_sensors": "11"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:58.252711698Z",
+      "latitude": "19.000838",
+      "longitude": "114.113505",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "23353",
+      "height_m": "0",
+      "num_sensors": "10"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:59.736884287Z",
+      "latitude": "10.793354",
+      "longitude": "121.429518",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "-9084",
+      "height_m": "3010",
+      "num_sensors": "7"
+    },
+    {
+      "timestamp": "2026-08-29T22:41:59.296051737Z",
+      "latitude": "10.730903",
+      "longitude": "121.47979",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "42797",
+      "height_m": "6047",
+      "num_sensors": "10"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:00.787898021Z",
+      "latitude": "17.344035",
+      "longitude": "128.366795",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "14035",
+      "height_m": "0",
+      "num_sensors": "9"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:01.861590835Z",
+      "latitude": "21.437462",
+      "longitude": "112.816771",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "-55033",
+      "height_m": "15155",
+      "num_sensors": "11"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:02.243003704Z",
+      "latitude": "21.349605",
+      "longitude": "112.837113",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "-14800",
+      "height_m": "0",
+      "num_sensors": "10"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:02.051825088Z",
+      "latitude": "21.374332",
+      "longitude": "112.792589",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "-12124",
+      "height_m": "3025",
+      "num_sensors": "7"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:01.989670639Z",
+      "latitude": "21.345029",
+      "longitude": "112.811279",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "-9601",
+      "height_m": "0",
+      "num_sensors": "8"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:02.165951658Z",
+      "latitude": "21.337296",
+      "longitude": "112.817969",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "14673",
+      "height_m": "7673",
+      "num_sensors": "7"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:01.871782548Z",
+      "latitude": "21.331107",
+      "longitude": "112.783765",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "14776",
+      "height_m": "0",
+      "num_sensors": "7"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:02.295558254Z",
+      "latitude": "21.379798",
+      "longitude": "112.799386",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "16641",
+      "height_m": "5120",
+      "num_sensors": "8"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:02.166558000Z",
+      "latitude": "21.3528",
+      "longitude": "112.8002",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "17465",
+      "height_m": "0",
+      "num_sensors": "10"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:01.953197108Z",
+      "latitude": "21.340021",
+      "longitude": "112.691243",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "18503",
+      "height_m": "0",
+      "num_sensors": "12"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:01.108145000Z",
+      "latitude": "17.4635",
+      "longitude": "128.527",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "-16017",
+      "height_m": "0",
+      "num_sensors": "9"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:02.469673247Z",
+      "latitude": "19.241474",
+      "longitude": "115.617044",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "-23958",
+      "height_m": "0",
+      "num_sensors": "14"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:02.474471307Z",
+      "latitude": "19.23987",
+      "longitude": "115.623797",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "-10726",
+      "height_m": "3213",
+      "num_sensors": "7"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:02.470886000Z",
+      "latitude": "19.2514",
+      "longitude": "115.5718",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "-698",
+      "height_m": "0",
+      "num_sensors": "7"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:04.672321167Z",
+      "latitude": "19.078963",
+      "longitude": "114.52203",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "-11171",
+      "height_m": "3000",
+      "num_sensors": "8"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:04.673894325Z",
+      "latitude": "19.057882",
+      "longitude": "114.520862",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "-9289",
+      "height_m": "12535",
+      "num_sensors": "8"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:04.669986748Z",
+      "latitude": "19.067981",
+      "longitude": "114.518321",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "11865",
+      "height_m": "4412",
+      "num_sensors": "10"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:04.206914841Z",
+      "latitude": "13.570429",
+      "longitude": "120.070338",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "-3487",
+      "height_m": "19760",
+      "num_sensors": "6"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:04.378340108Z",
+      "latitude": "20.536318",
+      "longitude": "116.981593",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "13022",
+      "height_m": "0",
+      "num_sensors": "8"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:07.169818620Z",
+      "latitude": "15.19364",
+      "longitude": "131.202967",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "-5001",
+      "height_m": "9801",
+      "num_sensors": "7"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:07.317388929Z",
+      "latitude": "15.215666",
+      "longitude": "131.369209",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "-10223",
+      "height_m": "7544",
+      "num_sensors": "12"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:09.914890886Z",
+      "latitude": "19.325659",
+      "longitude": "118.139538",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "22934",
+      "height_m": "7906",
+      "num_sensors": "7"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:10.110438257Z",
+      "latitude": "19.614749",
+      "longitude": "118.528224",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "-59957",
+      "height_m": "0",
+      "num_sensors": "14"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:09.687237435Z",
+      "latitude": "19.576523",
+      "longitude": "118.45225",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "-51369",
+      "height_m": "0",
+      "num_sensors": "17"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:09.577865000Z",
+      "latitude": "19.5805",
+      "longitude": "118.4658",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "-35778",
+      "height_m": "0",
+      "num_sensors": "5"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:09.627266033Z",
+      "latitude": "19.574913",
+      "longitude": "118.520167",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "-31096",
+      "height_m": "0",
+      "num_sensors": "16"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:09.794723114Z",
+      "latitude": "19.545092",
+      "longitude": "118.480862",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "8038",
+      "height_m": "3021",
+      "num_sensors": "6"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:09.800399623Z",
+      "latitude": "19.538063",
+      "longitude": "118.481914",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "11244",
+      "height_m": "19375",
+      "num_sensors": "5"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:12.704803599Z",
+      "latitude": "17.358889",
+      "longitude": "128.366128",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "27572",
+      "height_m": "0",
+      "num_sensors": "14"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:15.710499435Z",
+      "latitude": "17.287124",
+      "longitude": "120.631486",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "-18146",
+      "height_m": "13765",
+      "num_sensors": "11"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:15.711307587Z",
+      "latitude": "17.281748",
+      "longitude": "120.641004",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "17051",
+      "height_m": "6771",
+      "num_sensors": "16"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:15.714234569Z",
+      "latitude": "17.282703",
+      "longitude": "120.650279",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "20759",
+      "height_m": "7438",
+      "num_sensors": "12"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:15.973474639Z",
+      "latitude": "17.330014",
+      "longitude": "120.823428",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "-10073",
+      "height_m": "11683",
+      "num_sensors": "7"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:16.381037820Z",
+      "latitude": "17.270628",
+      "longitude": "120.433686",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "15883",
+      "height_m": "0",
+      "num_sensors": "7"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:19.995508261Z",
+      "latitude": "17.516022",
+      "longitude": "128.28456",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "12688",
+      "height_m": "4295",
+      "num_sensors": "7"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:19.991085505Z",
+      "latitude": "17.545753",
+      "longitude": "128.253571",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "20850",
+      "height_m": "7871",
+      "num_sensors": "9"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:19.283643246Z",
+      "latitude": "17.506066",
+      "longitude": "128.221837",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "-82833",
+      "height_m": "0",
+      "num_sensors": "18"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:19.999200732Z",
+      "latitude": "17.50045",
+      "longitude": "128.148749",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "-7554",
+      "height_m": "7126",
+      "num_sensors": "10"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:20.002302269Z",
+      "latitude": "17.529282",
+      "longitude": "128.130281",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "10283",
+      "height_m": "5140",
+      "num_sensors": "10"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:19.992550278Z",
+      "latitude": "17.595346",
+      "longitude": "128.124249",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "15997",
+      "height_m": "0",
+      "num_sensors": "7"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:19.463746012Z",
+      "latitude": "19.056194",
+      "longitude": "114.164692",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "-22727",
+      "height_m": "3167",
+      "num_sensors": "10"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:19.520167654Z",
+      "latitude": "19.028694",
+      "longitude": "114.171818",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "-19768",
+      "height_m": "0",
+      "num_sensors": "12"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:19.625176088Z",
+      "latitude": "19.078005",
+      "longitude": "114.216099",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "-10773",
+      "height_m": "0",
+      "num_sensors": "10"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:20.555671446Z",
+      "latitude": "17.4049",
+      "longitude": "127.687932",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "16242",
+      "height_m": "0",
+      "num_sensors": "5"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:20.519662141Z",
+      "latitude": "17.366267",
+      "longitude": "127.712222",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "33940",
+      "height_m": "0",
+      "num_sensors": "12"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:20.690370094Z",
+      "latitude": "15.277765",
+      "longitude": "120.673712",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "9572",
+      "height_m": "12123",
+      "num_sensors": "7"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:21.392153336Z",
+      "latitude": "17.294849",
+      "longitude": "127.662803",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "-32725",
+      "height_m": "0",
+      "num_sensors": "13"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:21.305171421Z",
+      "latitude": "17.298699",
+      "longitude": "127.679514",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "-15839",
+      "height_m": "0",
+      "num_sensors": "11"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:21.235107003Z",
+      "latitude": "17.29662",
+      "longitude": "127.677484",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "-14176",
+      "height_m": "0",
+      "num_sensors": "10"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:21.659314197Z",
+      "latitude": "20.200483",
+      "longitude": "110.117103",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "-21794",
+      "height_m": "0",
+      "num_sensors": "13"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:22.100413969Z",
+      "latitude": "19.123761",
+      "longitude": "113.323086",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "17027",
+      "height_m": "4132",
+      "num_sensors": "6"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:22.107300213Z",
+      "latitude": "19.291558",
+      "longitude": "113.306931",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "-18109",
+      "height_m": "19145",
+      "num_sensors": "11"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:22.203911488Z",
+      "latitude": "19.327954",
+      "longitude": "113.222551",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "-14919",
+      "height_m": "0",
+      "num_sensors": "5"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:22.202309433Z",
+      "latitude": "19.305729",
+      "longitude": "113.284365",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "-12272",
+      "height_m": "9626",
+      "num_sensors": "8"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:22.098239878Z",
+      "latitude": "19.313612",
+      "longitude": "113.281043",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "8384",
+      "height_m": "3079",
+      "num_sensors": "8"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:22.091745816Z",
+      "latitude": "19.30916",
+      "longitude": "113.286191",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "57623",
+      "height_m": "0",
+      "num_sensors": "14"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:25.946337729Z",
+      "latitude": "14.948432",
+      "longitude": "132.423219",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "40891",
+      "height_m": "0",
+      "num_sensors": "14"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:25.051513028Z",
+      "latitude": "15.416484",
+      "longitude": "132.227524",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "17081",
+      "height_m": "0",
+      "num_sensors": "7"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:25.037691312Z",
+      "latitude": "15.504671",
+      "longitude": "132.196271",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "16686",
+      "height_m": "0",
+      "num_sensors": "11"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:25.018056045Z",
+      "latitude": "15.506089",
+      "longitude": "132.174846",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "29730",
+      "height_m": "0",
+      "num_sensors": "19"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:25.412632002Z",
+      "latitude": "14.765505",
+      "longitude": "134.636858",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "-14720",
+      "height_m": "0",
+      "num_sensors": "10"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:25.401898102Z",
+      "latitude": "14.703441",
+      "longitude": "134.661362",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "12204",
+      "height_m": "0",
+      "num_sensors": "11"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:25.160973595Z",
+      "latitude": "20.701002",
+      "longitude": "116.967941",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "10711",
+      "height_m": "3054",
+      "num_sensors": "6"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:24.673750846Z",
+      "latitude": "20.694102",
+      "longitude": "116.956587",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "11830",
+      "height_m": "0",
+      "num_sensors": "10"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:25.397050132Z",
+      "latitude": "20.701633",
+      "longitude": "116.965691",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "12211",
+      "height_m": "0",
+      "num_sensors": "7"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:26.887090043Z",
+      "latitude": "21.415425",
+      "longitude": "114.93264",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "-22793",
+      "height_m": "0",
+      "num_sensors": "11"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:27.232847233Z",
+      "latitude": "21.420076",
+      "longitude": "114.950923",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "-17813",
+      "height_m": "0",
+      "num_sensors": "10"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:26.992311860Z",
+      "latitude": "21.414928",
+      "longitude": "114.899603",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "-16625",
+      "height_m": "0",
+      "num_sensors": "7"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:26.532807518Z",
+      "latitude": "17.486329",
+      "longitude": "126.342798",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "13555",
+      "height_m": "16006",
+      "num_sensors": "7"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:26.661805890Z",
+      "latitude": "17.538053",
+      "longitude": "126.512151",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "-13664",
+      "height_m": "8279",
+      "num_sensors": "6"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:26.526248142Z",
+      "latitude": "17.522792",
+      "longitude": "126.499807",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "8319",
+      "height_m": "3097",
+      "num_sensors": "6"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:26.520887434Z",
+      "latitude": "17.52354",
+      "longitude": "126.492738",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "12844",
+      "height_m": "0",
+      "num_sensors": "10"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:26.256493013Z",
+      "latitude": "21.05743",
+      "longitude": "113.633449",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "13655",
+      "height_m": "0",
+      "num_sensors": "11"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:27.736934705Z",
+      "latitude": "20.81451",
+      "longitude": "116.805043",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "20577",
+      "height_m": "0",
+      "num_sensors": "9"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:27.738639259Z",
+      "latitude": "20.818821",
+      "longitude": "116.799515",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "30217",
+      "height_m": "0",
+      "num_sensors": "11"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:29.633499672Z",
+      "latitude": "17.402115",
+      "longitude": "128.380363",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "9276",
+      "height_m": "11123",
+      "num_sensors": "6"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:32.387099086Z",
+      "latitude": "12.231728",
+      "longitude": "122.192984",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "19131",
+      "height_m": "0",
+      "num_sensors": "10"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:33.427271548Z",
+      "latitude": "17.576468",
+      "longitude": "126.286522",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "-27667",
+      "height_m": "0",
+      "num_sensors": "16"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:32.972665742Z",
+      "latitude": "17.60346",
+      "longitude": "126.26008",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "4044",
+      "height_m": "18658",
+      "num_sensors": "7"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:33.143997845Z",
+      "latitude": "17.592562",
+      "longitude": "126.187017",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "7344",
+      "height_m": "7121",
+      "num_sensors": "10"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:35.594561010Z",
+      "latitude": "19.862893",
+      "longitude": "114.346359",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "-13693",
+      "height_m": "3172",
+      "num_sensors": "13"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:35.587793115Z",
+      "latitude": "19.897202",
+      "longitude": "114.340417",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "12769",
+      "height_m": "3061",
+      "num_sensors": "8"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:35.590838642Z",
+      "latitude": "19.881909",
+      "longitude": "114.348353",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "13592",
+      "height_m": "0",
+      "num_sensors": "9"
+    },
+    {
+      "timestamp": "2026-08-29T22:42:36.756926477Z",
+      "latitude": "17.366502",
+      "longitude": "128.34333",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "-8165",
+      "height_m": "11399",
+      "num_sensors": "6"
     }
   ]
 }
