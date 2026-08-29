@@ -39,6 +39,7 @@ DATA_DIR = Path(__file__).resolve().parent.parent / "docs" / "data"
 # segment that exists locally, plus the merged JSON feed.
 CSV_GLOBS = ["pagasa_lightning_*.csv", "panahon_lightning_*.csv"]
 JSON_FILE = "pagasa_lightning_latest.json"
+ALL_CSV_FILE = "lightning_strikes_all.csv"  # combined CSV built by build_dashboard_feed.py
 
 
 def get_access_token() -> str:
@@ -144,7 +145,10 @@ def main():
     mime_by_ext = {".csv": "text/csv", ".json": "application/json"}
     csv_paths = sorted(set(p for pattern in CSV_GLOBS for p in DATA_DIR.glob(pattern)))
     json_path = DATA_DIR / JSON_FILE
-    paths = csv_paths + ([json_path] if json_path.exists() else [])
+    all_csv_path = DATA_DIR / ALL_CSV_FILE
+    paths = csv_paths
+    paths += [all_csv_path] if all_csv_path.exists() else []
+    paths += [json_path] if json_path.exists() else []
     if not paths:
         print("  nothing to sync yet")
         return
