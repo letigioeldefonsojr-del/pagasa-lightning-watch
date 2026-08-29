@@ -2504,6 +2504,78 @@
       "type": "Cloud to Ground",
       "amplitude_ka": "-9634",
       "height_m": "0",
+      "num_sensors": "6"
+    },
+    {
+      "timestamp": "2026-08-29T23:45:19.754837001Z",
+      "latitude": "18.99318",
+      "longitude": "114.833214",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "-16429",
+      "height_m": "15215",
+      "num_sensors": "8"
+    },
+    {
+      "timestamp": "2026-08-29T23:45:19.366437703Z",
+      "latitude": "19.09085",
+      "longitude": "114.750616",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "15602",
+      "height_m": "0",
+      "num_sensors": "8"
+    },
+    {
+      "timestamp": "2026-08-29T23:45:19.749322974Z",
+      "latitude": "19.052903",
+      "longitude": "114.799545",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "16590",
+      "height_m": "0",
+      "num_sensors": "12"
+    },
+    {
+      "timestamp": "2026-08-29T23:45:20.103059106Z",
+      "latitude": "10.11907",
+      "longitude": "120.111881",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "21840",
+      "height_m": "13267",
+      "num_sensors": "8"
+    },
+    {
+      "timestamp": "2026-08-29T23:45:20.938621975Z",
+      "latitude": "10.731291",
+      "longitude": "121.750395",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "-15052",
+      "height_m": "19211",
+      "num_sensors": "6"
+    },
+    {
+      "timestamp": "2026-08-29T23:45:20.886197146Z",
+      "latitude": "10.619695",
+      "longitude": "121.6954",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "-7159",
+      "height_m": "17170",
+      "num_sensors": "6"
+    },
+    {
+      "timestamp": "2026-08-29T23:45:20.934316329Z",
+      "latitude": "10.661384",
+      "longitude": "121.72164",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "-6685",
+      "height_m": "17880",
+      "num_sensors": "8"
+    },
+    {
+      "timestamp": "2026-08-29T23:45:20.330746077Z",
+      "latitude": "19.159821",
+      "longitude": "115.015817",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "11607",
+      "height_m": "5412",
       "num_sensors": "7"
     },
     {
