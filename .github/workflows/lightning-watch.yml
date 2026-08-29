@@ -26,6 +26,9 @@ env:
   # clean final commit instead of being cut off mid-write.
   MAX_RUNTIME_SECONDS: '21000'
   COMMIT_INTERVAL_SECONDS: '300'
+  # Rotate into a new CSV every N minutes instead of one file per job run.
+  # Set to '0' to go back to a single continuous file per job run.
+  SPLIT_MINUTES: '60'
   # panahon.gov.ph's certificate fails strict verification on GitHub's
   # runners specifically (works fine on a normal PC) -- a mismatch
   # between their cert chain and this environment's trust store, not an
