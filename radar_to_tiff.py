@@ -105,6 +105,7 @@ import argparse
 import csv
 import io
 import json
+import os
 import sys
 import threading
 import time
@@ -693,7 +694,15 @@ def watch_lightning_panahon(
         seen = {}
         print(f"  [{time.strftime('%H:%M:%S')}] starting new segment -- {out_path}\n")
 
-    sio = socketio.Client(reconnection=True, reconnection_attempts=0, reconnection_delay=5)
+    # Some environments (notably GitHub Actions' Ubuntu runners) fail this
+    # connection's TLS check with "unable to get local issuer certificate"
+    # even though the same code works fine elsewhere -- a mismatch between
+    # panahon.gov.ph's certificate chain and that environment's trust
+    # store, not an actual security problem with this script. Set
+    # PANAHON_SSL_VERIFY=false to skip verification for just this
+    # connection if you hit that error and can't fix it another way.
+    ssl_verify = os.environ.get("PANAHON_SSL_VERIFY", "true").strip().lower() not in ("false", "0", "no")
+    sio = socketio.Client(reconnection=True, reconnection_attempts=0, reconnection_delay=5, ssl_verify=ssl_verify)
 
     @sio.on(PANAHON_LIGHTNING_EVENT)
     def _on_strike(raw):
