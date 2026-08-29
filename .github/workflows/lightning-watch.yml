@@ -26,7 +26,7 @@ jobs:
           python-version: '3.12'
 
       - name: Install dependencies
-        run: pip install requests "python-socketio[client]" websocket-client
+                run: pip install requests numpy Pillow "python-socketio[client]" websocket-client
 
       - name: Watch continuously, committing (and syncing to Drive) periodically
         env:
