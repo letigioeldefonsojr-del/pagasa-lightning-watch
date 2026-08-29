@@ -2,35 +2,21 @@ name: Lightning watch
 
 on:
   schedule:
-    # Fires at fixed UTC clock hours 0, 5, 10, 15, 20 (every 5 hours).
-    # Each job self-stops after ~5h50m (see MAX_RUNTIME_SECONDS below),
-    # so the NEXT scheduled job starts about 50 minutes before the
-    # previous one stops -- deliberate overlap, not a gap, to absorb
-    # GitHub's schedule being best-effort (runs can slip a few minutes).
     - cron: '0 */5 * * *'
-  workflow_dispatch: {}   # lets you trigger a run manually from the Actions tab, for testing
+  workflow_dispatch: {}
 
 permissions:
-  contents: write   # needed so this workflow can commit the updated data back to the repo
-
-# Deliberately NOT using a concurrency group here -- unlike a "poll once"
-# job, this one runs for hours, and we WANT the next scheduled run to
-# start and briefly overlap with the previous one still finishing up
-# (see the cron comment above), not get queued behind it.
+  contents: write
 
 env:
-  # "panahon" (richer per-strike data, live push feed) or "pagasa" (no
-  # extra dependency, simple REST polling). See DEPLOY_GITHUB.md.
   LIGHTNING_SOURCE: panahon
-  # 5h50m -- safely under GitHub's 6h hard job kill, leaving time for a
-  # clean final commit instead of being cut off mid-write.
   MAX_RUNTIME_SECONDS: '21000'
   COMMIT_INTERVAL_SECONDS: '300'
 
 jobs:
   watch:
     runs-on: ubuntu-latest
-    timeout-minutes: 355   # belt-and-suspenders safety net under GitHub's own 360-min (6h) hard cap
+    timeout-minutes: 355
 
     steps:
       - uses: actions/checkout@v4
