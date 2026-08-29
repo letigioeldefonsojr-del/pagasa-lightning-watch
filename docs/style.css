@@ -74,17 +74,54 @@ h1 {
   border: 1px solid var(--panel-border);
 }
 
-.table-section {
+.table-section, .downloads {
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 1.5rem;
 }
 
-.table-section h2 {
+.downloads {
+  margin-bottom: 1.5rem;
+}
+
+.table-section h2, .downloads h2 {
   font-size: 1.1rem;
   color: var(--text-dim);
   font-weight: 600;
   margin-bottom: 0.75rem;
+}
+
+#download-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid var(--panel-border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+#download-list li {
+  padding: 0.6rem 0.9rem;
+  border-bottom: 1px solid var(--panel-border);
+  font-size: 0.9rem;
+}
+
+#download-list li:last-child {
+  border-bottom: none;
+}
+
+#download-list a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+#download-list a:hover {
+  text-decoration: underline;
+}
+
+#download-list .filesize {
+  color: var(--text-dim);
+  font-size: 0.8rem;
 }
 
 .table-wrap {
