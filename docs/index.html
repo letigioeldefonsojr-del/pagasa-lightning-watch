@@ -34,6 +34,11 @@
 
   <section id="map" aria-label="Map of recent strikes"></section>
 
+  <section class="downloads" id="downloads">
+    <h2>Download data</h2>
+    <ul id="download-list"><li class="loading">Loading file list...</li></ul>
+  </section>
+
   <section class="table-section">
     <h2>Most recent strikes</h2>
     <div class="table-wrap">
@@ -55,7 +60,7 @@
   </section>
 
   <footer>
-    <p>Data source: PAGASA. Raw data: browse the <a href="data/">docs/data folder</a> for every segment CSV, or the merged <a href="data/pagasa_lightning_latest.json">latest JSON</a> feed this page reads.</p>
+    <p>Data source: PAGASA. Individual segment CSVs are listed under "Download data" above; the merged <a href="data/pagasa_lightning_latest.json">latest JSON</a> feed (what this page itself reads) is also available directly.</p>
   </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>

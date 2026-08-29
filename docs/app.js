@@ -108,6 +108,46 @@ function renderMap(strikes) {
   }
 }
 
+// GitHub Pages doesn't serve folder listings, so a plain link to
+// data/ 404s -- this instead asks GitHub's API what files actually
+// exist and renders a real, working download link for each one
+// (the API's download_url is already a direct raw.githubusercontent.com
+// link, so clicking it saves the file instead of just displaying it).
+async function renderDownloads() {
+  const list = document.getElementById("download-list");
+  // Derive owner/repo from the Pages URL itself (https://OWNER.github.io/REPO/...)
+  // rather than hardcoding them, so this works unmodified for anyone who
+  // deploys this project under their own account.
+  const owner = location.hostname.split(".")[0];
+  const repo = location.pathname.split("/").filter(Boolean)[0];
+  if (!owner || !repo) {
+    list.innerHTML = '<li class="empty">Couldn\'t determine this repo\'s name from the URL.</li>';
+    return;
+  }
+  try {
+    const resp = await fetch(`https://api.github.com/repos/${owner}/${repo}/contents/docs/data`, {
+      headers: { Accept: "application/vnd.github+json" },
+    });
+    if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+    const entries = await resp.json();
+    const files = entries
+      .filter((e) => e.type === "file" && (e.name.endsWith(".csv") || e.name.endsWith(".json")))
+      .sort((a, b) => b.name.localeCompare(a.name)); // newest-looking filenames first
+    if (!files.length) {
+      list.innerHTML = '<li class="empty">No data files yet -- check back after the first scheduled run finishes.</li>';
+      return;
+    }
+    list.innerHTML = files
+      .map(
+        (f) =>
+          `<li><a href="${f.download_url}" download="${escapeHtml(f.name)}">${escapeHtml(f.name)}</a> <span class="filesize">(${(f.size / 1024).toFixed(1)} KB)</span></li>`
+      )
+      .join("");
+  } catch (err) {
+    list.innerHTML = `<li class="empty">Couldn't load the file list (${escapeHtml(err.message)}). You can still browse it directly on <a href="https://github.com/${owner}/${repo}/tree/main/docs/data" target="_blank" rel="noopener">GitHub</a>.</li>`;
+  }
+}
+
 async function load() {
   let strikes = [];
   try {
@@ -134,4 +174,11 @@ async function load() {
 }
 
 load();
+renderDownloads();
 setInterval(load, 60000); // auto-refresh every 60s so you never have to reload manually
+// Refreshed less often than the data above: GitHub's file-listing API is
+// rate-limited (60 requests/hour for anyone not signed in), and the file
+// list itself only changes roughly once an hour (a new segment) or once
+// per job run anyway, so every 60s here would be both wasteful and risk
+// hitting that limit for no benefit.
+setInterval(renderDownloads, 300000);
