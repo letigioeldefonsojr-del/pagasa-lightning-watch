@@ -4271,9 +4271,9 @@
       "num_sensors": "13"
     },
     {
-      "timestamp": "2026-08-29T22:26:48.068354158Z",
-      "latitude": "19.758995",
-      "longitude": "114.609582",
+      "timestamp": "2026-08-29T22:46:10.434328520Z",
+      "latitude": "14.573601",
+      "longitude": "133.024072",
       "type": "Cloud to Cloud",
       "amplitude_ka": "-18432",
       "height_m": "5138",
