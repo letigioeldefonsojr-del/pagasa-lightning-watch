@@ -1,0 +1,48 @@
+name: Lightning watch
+
+on:
+  schedule:
+    # Shortest interval GitHub allows is every 5 min; 15 min is the
+    # realistic reliable floor (schedule triggers are best-effort and can
+    # slip under load) and comfortably covers PAGASA's own rolling window.
+    - cron: '*/15 * * * *'
+  workflow_dispatch: {}   # lets you trigger a run manually from the Actions tab, for testing
+
+permissions:
+  contents: write   # needed so this workflow can commit the updated data back to the repo
+
+concurrency:
+  group: lightning-watch
+  cancel-in-progress: false   # never cancel a run that's mid-commit; just queue the next one
+
+jobs:
+  poll:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Fetch latest strikes
+        run: python scripts/poll_and_commit.py
+
+      - name: Commit updated data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/data/
+          git diff --cached --quiet || git commit -m "Update lightning data $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git push
+
+      - name: Sync to Google Drive
+        if: ${{ secrets.GDRIVE_REFRESH_TOKEN != '' }}
+        env:
+          GDRIVE_CLIENT_ID: ${{ secrets.GDRIVE_CLIENT_ID }}
+          GDRIVE_CLIENT_SECRET: ${{ secrets.GDRIVE_CLIENT_SECRET }}
+          GDRIVE_REFRESH_TOKEN: ${{ secrets.GDRIVE_REFRESH_TOKEN }}
+        run: python scripts/upload_to_drive.py

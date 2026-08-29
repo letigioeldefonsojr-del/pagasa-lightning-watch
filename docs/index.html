@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>PAGASA Lightning Watch</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>PAGASA Lightning Watch</h1>
+    <p class="sub">Auto-updated every ~15 minutes by a GitHub Actions workflow -- runs whether or not anyone's computer is on.</p>
+  </header>
+
+  <section class="stats" id="stats">
+    <div class="stat-card">
+      <div class="stat-value" id="stat-total">--</div>
+      <div class="stat-label">total strikes logged</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value" id="stat-new">--</div>
+      <div class="stat-label">new on last run</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value" id="stat-updated">--</div>
+      <div class="stat-label">last updated (UTC)</div>
+    </div>
+  </section>
+
+  <section id="map" aria-label="Map of recent strikes"></section>
+
+  <section class="table-section">
+    <h2>Most recent strikes</h2>
+    <div class="table-wrap">
+      <table id="strike-table">
+        <thead>
+          <tr>
+            <th>Timestamp</th>
+            <th>Type</th>
+            <th>Latitude</th>
+            <th>Longitude</th>
+            <th>Amplitude</th>
+          </tr>
+        </thead>
+        <tbody id="strike-tbody">
+          <tr><td colspan="5" class="loading">Loading...</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer>
+    <p>Data source: PAGASA (<a href="https://pagasa.dost.gov.ph/" target="_blank" rel="noopener">pagasa.dost.gov.ph</a>). Raw data: <a href="data/pagasa_lightning_log.csv">full CSV</a> &middot; <a href="data/pagasa_lightning_latest.json">latest JSON</a>.</p>
+  </footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
