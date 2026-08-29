@@ -39,6 +39,11 @@ OUTDIR = REPO_ROOT / "docs" / "data"
 SOURCE = os.environ.get("LIGHTNING_SOURCE", "panahon").strip().lower()
 MAX_RUNTIME_SECONDS = int(os.environ.get("MAX_RUNTIME_SECONDS", "21000"))  # 5h50m
 COMMIT_INTERVAL_SECONDS = int(os.environ.get("COMMIT_INTERVAL_SECONDS", "300"))  # 5 min
+# Rotate into a new CSV every N minutes instead of one file per job run
+# (matches the desktop tool's --split behavior). Set SPLIT_MINUTES=0 to
+# turn this off and go back to one continuous file per job run.
+_split_raw = int(os.environ.get("SPLIT_MINUTES", "60"))
+SPLIT_MINUTES = _split_raw if _split_raw > 0 else None
 
 
 def run_git(*args, check=True):
@@ -101,9 +106,9 @@ watch_error = {}
 def run_watch(stop_event: threading.Event):
     try:
         if SOURCE == "panahon":
-            core.watch_lightning_panahon(OUTDIR, stop_event=stop_event)
+            core.watch_lightning_panahon(OUTDIR, stop_event=stop_event, split_minutes=SPLIT_MINUTES)
         else:
-            core.watch_lightning(OUTDIR, interval=60, stop_event=stop_event)
+            core.watch_lightning(OUTDIR, interval=60, stop_event=stop_event, split_minutes=SPLIT_MINUTES)
     except Exception as e:
         watch_error["error"] = e
         watch_error["traceback"] = traceback.format_exc()
