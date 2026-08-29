@@ -4275,17 +4275,26 @@
       "latitude": "19.758995",
       "longitude": "114.609582",
       "type": "Cloud to Cloud",
-      "amplitude_ka": "-18432",
-      "height_m": "5138",
+      "amplitude_ka": "10975",
+      "height_m": "4703",
+      "num_sensors": "12"
+    },
+    {
+      "timestamp": "2026-08-29T22:35:56.575092762Z",
+      "latitude": "19.519726",
+      "longitude": "118.436231",
+      "type": "Cloud to Cloud",
+      "amplitude_ka": "25296",
+      "height_m": "8765",
       "num_sensors": "8"
     },
     {
-      "timestamp": "2026-08-29T22:26:48.076158842Z",
-      "latitude": "19.772738",
-      "longitude": "114.601878",
-      "type": "Cloud to Cloud",
-      "amplitude_ka": "-11923",
-      "height_m": "3000",
+      "timestamp": "2026-08-29T22:35:57.380228293Z",
+      "latitude": "21.389745",
+      "longitude": "112.737296",
+      "type": "Cloud to Ground",
+      "amplitude_ka": "61308",
+      "height_m": "0",
       "num_sensors": "9"
     },
     {
