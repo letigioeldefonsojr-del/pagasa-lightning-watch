@@ -29,7 +29,7 @@
       "type": "Cloud to Ground",
       "amplitude_ka": "32519",
       "height_m": "0",
-      "num_sensors": "12"
+      "num_sensors": "13"
     },
     {
       "timestamp": "2026-08-29T23:15:35.239504484Z",
@@ -407,7 +407,7 @@
       "type": "Cloud to Ground",
       "amplitude_ka": "-29724",
       "height_m": "0",
-      "num_sensors": "11"
+      "num_sensors": "9"
     },
     {
       "timestamp": "2026-08-29T23:15:46.761821477Z",
@@ -2324,7 +2324,7 @@
       "type": "Cloud to Ground",
       "amplitude_ka": "-22858",
       "height_m": "0",
-      "num_sensors": "10"
+      "num_sensors": "8"
     },
     {
       "timestamp": "2026-08-29T23:17:04.209987187Z",
@@ -2900,7 +2900,7 @@
       "type": "Cloud to Ground",
       "amplitude_ka": "-76484",
       "height_m": "0",
-      "num_sensors": "13"
+      "num_sensors": "8"
     },
     {
       "timestamp": "2026-08-29T23:17:24.305140000Z",
